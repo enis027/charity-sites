@@ -48,7 +48,7 @@ Copy the three folders in `skills/` into your agent's skills directory (for Clau
 
 ### Requirements
 
-- Python 3.9+ (standard library only)
+- Python 3.10+ (standard library only)
 - Optional: Chrome, Chromium or Edge for screenshots; Pillow, ImageMagick or macOS `sips` for resizing photos
 
 ## What the organisation receives

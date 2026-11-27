@@ -57,7 +57,7 @@ Choose one:
 
 1. Answer OPEN-QUESTIONS.md.
 2. In `source/site.json` set `"preview": false`.
-3. Run `python3 tools/build.py` (Python 3.9+, nothing else to install). It rebuilds `site/` and checks it. Fix anything it reports as ERROR.
+3. Run `python3 tools/build.py` (Python 3.10+, nothing else to install). It rebuilds `site/` and checks it. Fix anything it reports as ERROR.
 4. Publish `site/` again.
 
 ## 6. Everyday edits
