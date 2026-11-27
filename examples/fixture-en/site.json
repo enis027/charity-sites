@@ -1,0 +1,112 @@
+{
+  "_comment": "FICTIONAL TEST FIXTURE. Harbour Lane Food Bank does not exist. All content here is invented solely to exercise every component of the template; never copy it into a real site.",
+  "schema": 1,
+  "preview": true,
+  "lang": "en",
+  "locale": "en-GB",
+  "currency": "GBP",
+  "currency_display": {"symbol": "£", "position": "before", "thousands": ","},
+  "org": {
+    "name": "Harbour Lane Food Bank",
+    "short_name": "Harbour Lane",
+    "legal_type": "registered charity",
+    "logo": "assets/logo.svg",
+    "logo_reverse": "assets/logo-reverse.svg",
+    "logo_width": 240, "logo_height": 64,
+    "favicon": "assets/logo.svg"
+  },
+  "brand": {"colors": ["#0B5D6B", "#F4A259", "#D1495B"]},
+  "contact": {
+    "address": "12 Harbour Lane, Exampleton EX1 2MP",
+    "phone": "+44 1234 567890",
+    "email": "hello@example.org",
+    "social": [{"network": "facebook", "url": "https://www.facebook.com/example"}, {"network": "instagram", "url": "https://www.instagram.com/example"}],
+    "src": "fixture"
+  },
+  "nav": [
+    {"label": "Home", "href": "index.html"},
+    {"label": "About us", "children": [{"label": "Our story", "href": "about.html"}, {"label": "Team", "href": "about.html#team"}, {"label": "Annual reports", "href": "index.html#reports"}]},
+    {"label": "Get help", "href": "help.html"},
+    {"label": "News", "href": "news-winter-appeal.html"},
+    {"label": "Contact", "href": "contact.html"}
+  ],
+  "header": {"member_cta": {"label": "Volunteer", "href": "contact.html"}},
+  "donate_href": "donate.html",
+  "sticky_donate": true,
+  "payment": {"provider": "stripe-payment-link", "provider_name": "Stripe", "url": "", "amount_param": "prefilled_amount", "amount_unit": "minor"},
+  "bank": {"recipient": "Harbour Lane Food Bank", "bank_name": "Example Bank", "account_number": "12345678", "sort_code": "00-00-00", "reference_hint": "Use your surname as the reference.", "src": "fixture"},
+  "donation": {
+    "presets": [10, 25, 50], "default": 25, "min": 1,
+        "trust_note": {"text": "Card payments are processed by Stripe. Card details never touch this website.", "src": "fixture"},
+    "membership_note": {"title": "Volunteering", "text": "Want to give time instead? [Contact us](contact.html).", "src": "fixture"}
+  },
+  "contact_form": {"action": "", "subjects": ["Getting help", "Volunteering", "Donations", "Press"], "privacy_link": {"label": "Privacy notice", "href": "about.html"}},
+  "footer": {
+    "about": "A community food bank in Exampleton. Fictional test fixture.",
+    "columns": [
+      {"title": "About", "links": [{"label": "Our story", "href": "about.html"}, {"label": "Team", "href": "about.html#team"}]},
+      {"title": "Help", "links": [{"label": "Get help", "href": "help.html"}, {"label": "Questions", "href": "help.html#faq"}]},
+      {"title": "News", "links": [{"label": "Winter appeal", "href": "news-winter-appeal.html"}]}
+    ],
+    "legal_links": [{"label": "Privacy", "href": "about.html"}],
+    "newsletter": {"title": "Newsletter", "text": "News from the food bank, once a month.", "action": "", "src": "fixture"},
+    "copyright_year": 2026
+  },
+  "pages": [
+    {
+      "slug": "index", "title": "Harbour Lane Food Bank", "description": "Emergency food and support in Exampleton.", "nav_active": "Home",
+      "sections": [
+        {"type": "hero", "src": "fixture", "overline": "Food bank since 2011", "title": "No one in Exampleton should go hungry", "lead": "We give emergency food parcels and signpost families to advice, run by volunteers and local donations.",
+         "ctas": [{"label": "Donate", "href": "donate.html", "style": "donate"}, {"label": "Get help", "href": "help.html", "style": "secondary", "icon": "arrow-right"}],
+         "facts": [{"icon": "calendar", "text": "Founded 2011"}, {"icon": "map-pin", "text": "3 distribution points"}, {"icon": "users", "text": "Run by volunteers"}]},
+        {"type": "pillars", "src": "fixture", "id": "what", "overline": "What we do", "title": "How we help", "lead": "Three ways we support people in our town.",
+         "items": [{"title": "Emergency parcels", "text": "Three days of food for anyone referred by a partner agency."}, {"title": "Advice signposting", "text": "Volunteers connect visitors with debt and housing advice."}, {"title": "School holiday meals", "text": "Lunch bags for children during holidays."}, {"title": "Community pantry", "text": "Low-cost groceries for members."}]},
+        {"type": "quote_band", "src": "fixture", "id": "story", "overline": "Our story", "quote": "We started with one shelf in a church hall.", "attribution": "Founding volunteer", "text": "Since then the food bank has grown with the support of local people.", "cta": {"label": "Read our story", "href": "about.html", "style": "inverse", "icon": "arrow-right"}},
+        {"type": "cards", "src": "fixture", "id": "help", "tone": "subtle", "overline": "Get help", "title": "Support for families", "lead": "Information for anyone who needs food or advice.", "link": {"label": "All support", "href": "help.html"},
+         "items": [{"icon": "home", "title": "How referrals work", "text": "Ask any partner agency for a voucher.", "href": "help.html", "link_label": "Find out more"}, {"icon": "map-pin", "title": "Opening times", "text": "Three distribution points across town.", "href": "help.html#faq", "link_label": "See times"}, {"icon": "book-open", "title": "Advice partners", "text": "Debt, housing and benefits advice.", "href": "help.html", "link_label": "See partners"}],
+         "quick_links": [{"label": "Questions", "href": "help.html#faq"}, {"label": "Contact us", "href": "contact.html"}]},
+        {"type": "columns", "src": "fixture", "id": "reports", "title": "Transparency", "overline": "Accountability",
+         "columns": [
+           {"type": "documents", "title": "Annual reports", "icon": "shield-check", "lead": "Our published accounts.", "items": [{"title": "Annual report 2025", "meta": "PDF · Published 1 March 2026", "href": "https://example.org/annual-report-2025.pdf"}]},
+           {"type": "logos", "title": "Partners", "icon": "handshake", "lead": "Organisations we work with.", "items": [{"name": "Example Advice Centre"}, {"name": "Exampleton Council"}]}
+         ]},
+        {"type": "news", "src": "fixture", "id": "news", "tone": "subtle", "overline": "News", "title": "Latest news", "link": {"label": "All news", "href": "news-winter-appeal.html"},
+         "items": [{"date": "2025-11-02", "category": "Appeal", "title": "Winter appeal opens", "href": "news-winter-appeal.html", "excerpt": "We are collecting tinned food and toiletries."}]},
+        {"type": "cta", "src": "fixture", "id": "give", "overline": "Donate", "title": "Help us keep the shelves full", "lead": "Give online by card or by bank transfer.", "ctas": [{"label": "Donate", "href": "donate.html", "style": "donate"}, {"label": "Volunteer", "href": "contact.html", "style": "secondary"}]}
+      ]
+    },
+    {
+      "slug": "about", "title": "Our story", "description": "How Harbour Lane Food Bank started.", "nav_active": "About us",
+      "header": {"breadcrumb": [{"label": "Home", "href": "index.html"}, {"label": "Our story"}], "overline": "About us", "title": "Our story", "lead": "A community food bank started by neighbours."},
+      "sections": [
+        {"type": "prose", "src": "fixture", "blocks": [{"type": "h2", "text": "Why we exist"}, {"type": "p", "text": "Founded in 2011 by volunteers from three local churches."}, {"type": "ul", "items": ["Emergency food", "Advice signposting", "Holiday meals"]}, {"type": "quote", "text": "We started with one shelf.", "attribution": "Founding volunteer"}]},
+        {"type": "team", "src": "fixture", "id": "team", "tone": "subtle", "overline": "Team", "title": "Trustees", "items": [{"name": "A. Example", "role": "Chair"}, {"name": "B. Example", "role": "Treasurer"}, {"name": "C. Example"}]},
+        {"type": "chips", "src": "fixture", "id": "where", "title": "Where we work", "items": [{"label": "North", "icon": "map-pin"}, {"label": "Centre", "icon": "map-pin"}, {"label": "Harbour", "icon": "map-pin"}]}
+      ]
+    },
+    {
+      "slug": "help", "title": "Get help", "description": "How to get food and advice.", "nav_active": "Get help",
+      "header": {"breadcrumb": [{"label": "Home", "href": "index.html"}, {"label": "Get help"}], "title": "Get help", "lead": "Information for anyone who needs food or advice.", "ctas": [{"label": "Contact us", "href": "contact.html", "style": "primary"}]},
+      "sections": [
+        {"type": "cards", "src": "fixture", "items": [{"icon": "home", "title": "Referrals", "text": "Ask a partner agency.", "href": "contact.html"}, {"icon": "map-pin", "title": "Opening times", "text": "Tuesdays and Fridays.", "href": "#faq"}]},
+        {"type": "accordion", "src": "fixture", "id": "faq", "tone": "subtle", "title": "Questions", "items": [{"q": "Do I need a voucher?", "a": "Yes, from any partner agency.", "open": true}, {"q": "Can I come more than once?", "a": "Yes, talk to us."}]}
+      ]
+    },
+    {
+      "slug": "news-winter-appeal", "title": "Winter appeal opens", "description": "Winter appeal 2025.", "nav_active": "News", "layout": "article",
+      "header": {"breadcrumb": [{"label": "Home", "href": "index.html"}, {"label": "News"}, {"label": "Winter appeal opens"}], "category": "Appeal", "date": "2025-11-02", "title": "Winter appeal opens", "lead": "We are collecting tinned food and toiletries."},
+      "src": "fixture",
+      "body": [{"type": "p", "text": "Drop-off points are open until **31 January**."}, {"type": "h2", "text": "What we need"}, {"type": "ol", "items": ["Tinned fish", "Long-life milk", "Toiletries"]}, {"type": "share", "url": "https://example.org/news-winter-appeal.html", "title": "Winter appeal opens"}],
+      "aside": [{"type": "links", "title": "More news", "items": [{"label": "Volunteers wanted", "href": "index.html", "date": "2025-09-01"}]}, {"type": "donate", "title": "Support our work", "text": "Give online in a few steps."}]
+    },
+    {
+      "slug": "donate", "title": "Donate", "description": "Donate to Harbour Lane Food Bank.", "layout": "donate",
+      "header": {"breadcrumb": [{"label": "Home", "href": "index.html"}, {"label": "Donate"}], "title": "Donate", "lead": "Give by card or bank transfer."}
+    },
+    {
+      "slug": "contact", "title": "Contact", "description": "Contact Harbour Lane Food Bank.", "nav_active": "Contact",
+      "header": {"breadcrumb": [{"label": "Home", "href": "index.html"}, {"label": "Contact"}], "title": "Contact us", "lead": "Questions about help, volunteering or donations."},
+      "sections": [{"type": "contact", "src": "fixture"}]
+    }
+  ]
+}

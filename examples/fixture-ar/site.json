@@ -1,0 +1,30 @@
+{
+  "_comment": "FICTIONAL RTL TEST FIXTURE. This organisation does not exist; the Arabic text only exercises right-to-left layout, Arabic fonts and Eastern currency formatting.",
+  "schema": 1,
+  "preview": true,
+  "lang": "ar",
+  "locale": "ar-JO",
+  "currency": "JOD",
+  "currency_display": {"symbol": "د.أ", "position": "after", "thousands": ","},
+  "org": {"name": "جمعية الميناء للغذاء", "short_name": "جمعية الميناء", "logo": "assets/logo.svg", "logo_reverse": "assets/logo-reverse.svg", "logo_width": 240, "logo_height": 64, "logo_alt": "شعار جمعية الميناء للغذاء"},
+  "brand": {"colors": ["#1B4965", "#5FA8D3", "#C8553D"]},
+  "contact": {"address": "شارع المثال 12، عمّان", "phone": "+962 6 000 0000", "email": "info@example.org", "social": [{"network": "facebook", "url": "https://www.facebook.com/example"}], "src": "fixture"},
+  "nav": [{"label": "الرئيسية", "href": "index.html"}, {"label": "تبرّع", "href": "donate.html"}, {"label": "اتصل بنا", "href": "contact.html"}],
+  "donate_href": "donate.html",
+  "sticky_donate": true,
+  "payment": {"provider": "none", "provider_name": "", "url": ""},
+  "bank": {"recipient": "جمعية الميناء للغذاء", "iban": "JO71 CBJO 0000 0000 0000 1234 5678 90", "src": "fixture"},
+  "donation": {"presets": [10, 25, 50], "default": 25, "min": 1},
+  "contact_form": {"action": "", "subjects": ["طلب مساعدة", "تطوع", "تبرعات"]},
+  "footer": {"columns": [{"title": "روابط", "links": [{"label": "الرئيسية", "href": "index.html"}, {"label": "تبرّع", "href": "donate.html"}]}], "newsletter": null, "copyright_year": 2026},
+  "pages": [
+    {"slug": "index", "title": "جمعية الميناء للغذاء", "description": "مثال اختباري للاتجاه من اليمين إلى اليسار.", "nav_active": "الرئيسية",
+     "sections": [
+       {"type": "hero", "src": "fixture", "overline": "منذ 2011", "title": "لا ينبغي أن يجوع أحد في مدينتنا", "lead": "نقدّم سلال غذائية طارئة ونرشد العائلات إلى جهات الدعم.", "ctas": [{"label": "تبرّع", "href": "donate.html", "style": "donate"}, {"label": "اتصل بنا", "href": "contact.html", "style": "secondary", "icon": "arrow-right"}], "facts": [{"icon": "calendar", "text": "تأسست عام 2011"}, {"icon": "users", "text": "يديرها متطوعون"}]},
+       {"type": "pillars", "src": "fixture", "id": "what", "overline": "ماذا نفعل", "title": "كيف نساعد", "items": [{"title": "سلال طارئة", "text": "طعام لثلاثة أيام."}, {"title": "إرشاد", "text": "ربط الزوار بجهات الاستشارة."}]},
+       {"type": "cta", "src": "fixture", "id": "give", "title": "ساعدنا في ملء الرفوف", "ctas": [{"label": "تبرّع", "href": "donate.html", "style": "donate"}]}
+     ]},
+    {"slug": "donate", "title": "تبرّع", "description": "تبرّع للجمعية.", "layout": "donate", "nav_active": "تبرّع", "header": {"breadcrumb": [{"label": "الرئيسية", "href": "index.html"}, {"label": "تبرّع"}], "title": "تبرّع", "lead": "عبر التحويل البنكي."}},
+    {"slug": "contact", "title": "اتصل بنا", "description": "اتصل بالجمعية.", "nav_active": "اتصل بنا", "header": {"breadcrumb": [{"label": "الرئيسية", "href": "index.html"}, {"label": "اتصل بنا"}], "title": "اتصل بنا"}, "sections": [{"type": "contact", "src": "fixture"}]}
+  ]
+}

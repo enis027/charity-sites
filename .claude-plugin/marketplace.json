@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "charity-sites",
+  "description": "Skills for rebuilding charity and nonprofit websites from their own content.",
+  "owner": { "name": "charity-sites contributors", "url": "https://github.com/enis027" },
+  "plugins": [
+    {
+      "name": "charity-sites",
+      "version": "0.1.0",
+      "source": "./",
+      "description": "Audit a charity website, rebuild it as an accessible static site in its own language, and hand it over with a payment-connection guide.",
+      "homepage": "https://github.com/enis027/charity-sites",
+      "license": "MIT",
+      "keywords": ["charity", "nonprofit", "website", "accessibility", "donations"]
+    }
+  ]
+}

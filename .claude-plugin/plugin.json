@@ -1,0 +1,13 @@
+{
+  "name": "charity-sites",
+  "version": "0.1.0",
+  "description": "Rebuild weak charity and nonprofit websites from their own content: audit, accessible static build in the organisation's language, and a handoff with a payment-connection guide.",
+  "author": { "name": "charity-sites contributors" },
+  "homepage": "https://github.com/enis027/charity-sites",
+  "repository": "https://github.com/enis027/charity-sites",
+  "license": "MIT",
+  "keywords": ["charity", "nonprofit", "ngo", "website", "accessibility", "donations", "static-site", "i18n"],
+  "commands": ["./commands"],
+  "skills": "./skills",
+  "agents": ["./agents/content-integrity-reviewer.md"]
+}

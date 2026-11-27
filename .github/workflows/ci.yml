@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Validate skills, agents and commands
+        run: python scripts/validate_skills.py
+      - name: Unit tests
+        run: python -m unittest discover -s tests -t . -v
+      - name: Build and check the fixtures
+        run: |
+          for f in examples/fixture-en examples/fixture-ar; do
+            python skills/charity-site-build/template/build.py $f/site.json --out /tmp/$(basename $f)
+            python skills/charity-site-build/scripts/check.py /tmp/$(basename $f) --site $f/site.json
+          done
